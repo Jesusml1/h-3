@@ -12,17 +12,18 @@
 }
 */
 let foo = {
-    id:100,
-    name:"foo",
-    role:"admin"
+    id: 100,
+    name: "foo",
+    role: "admin"
 };
 
 let bar = {
-    skills:["javascript", "html", "css", "python", "flask", "react", "redux"],
-    alias:"Super Alias"
+    skills: ["javascript", "html", "css", "python", "flask", "react", "redux"],
+    alias: "Super Alias"
 }
-let result;
+let result = { ...foo, ...bar }
+
 
 
 //export result
-module.exports = result; 
+module.exports = result
