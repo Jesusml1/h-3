@@ -5,13 +5,14 @@
 * output => ["javascript", "html", "css", "python", "flask", "react", "redux"]
 */
 let foo = {
-    id:100,
-    name:"foo",
-    role:"admin",
-    skills:["javascript", "html", "css", "python", "flask", "react", "redux"]
+    id: 100,
+    name: "foo",
+    role: "admin",
+    skills: ["javascript", "html", "css", "python", "flask", "react", "redux"]
 };
-let result;
+let result = [];
 
+foo.skills.map((s) => result.push(s))
 
 //export result
-module.exports = result; 
+module.exports = result
