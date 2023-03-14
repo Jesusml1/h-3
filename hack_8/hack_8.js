@@ -8,12 +8,16 @@
 * output => [["id",100], ["name","foo"], ["role","admin"]]
 */
 let foo = {
-    id:100,
-    name:"foo",
-    role:"admin"
+    id: 100,
+    name: "foo",
+    role: "admin"
 };
 let result = [];
+// result = Object.entries(foo);
 
+for (const k of Object.keys(foo)) {
+    result.push([k, foo[k]])
+}
 
 //export result
 module.exports = result; 
